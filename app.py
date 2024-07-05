@@ -5,7 +5,7 @@ import google.generativeai as genai
 
 FRAMEWORK = "Regular CSS use flex grid etc"
 MODEL_NAME = "gemini-1.5-flash-latest"
-API_KEY = st.secrets["AIzaSyC04sRc_1uAU1wBO2fOYWs8XhTxLPWcr9I"]
+API_KEY = st.secrets["default"]["API_KEY"]
 genai.configure(api_key=API_KEY)
 
 generation_config = {
